@@ -1,4 +1,4 @@
-markdown_content = """# 🌐 Atlantic Tech | Infrastructure & Networking Solutions
+🌐 Atlantic Tech | Infrastructure & Networking Solutions
 
 ![Atlantic Tech Banner](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop)
 

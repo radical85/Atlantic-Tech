@@ -1,189 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmacia Salud y Vida</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AtlanticTech - Servicios de Infraestructura TI</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #031B33, #0A3663, #16528E);
+            color: white;
+            padding: 120px 0;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(10, 54, 99, 0.15);
+        }
+        .icon-box {
+            font-size: 2.5rem;
+            color: #0A3663;
+            margin-bottom: 15px;
+        }
+        .btn-atlantic {
+            background-color: #0A3663;
+            color: white;
+        }
+        .btn-atlantic:hover {
+            background-color: #031B33;
+            color: white;
+        }
+        .text-atlantic {
+            color: #0A3663;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Farmacia Salud y Vida</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#productos">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand fw-bold fs-4" href="#"><i class="bi bi-water me-2 text-info"></i>AtlanticTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#contacto" class="btn btn-info text-dark fw-bold ms-lg-3">Cotizar Ahora</a>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="display-4 fw-bold mb-3">Infraestructura TI Robusta que Impulsa tu Negocio</h1>
+                    <p class="lead mb-4">En <strong>AtlanticTech</strong> diseñamos, implementamos y gestionamos soluciones tecnológicas de alta disponibilidad para que tu empresa nunca se detenga.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#servicios" class="btn btn-info btn-lg px-4 me-md-2 fw-bold">Nuestros Servicios</a>
+                        <a href="#contacto" class="btn btn-outline-light btn-lg px-4">Agendar Asesoría</a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <i class="bi bi-cloud-check text-info" style="font-size: 14rem;"></i>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <section id="inicio" class="bg-light py-5">
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5 bg-light">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold">Tu farmacia de confianza en la ciudad</h1>
-              <p class="lead">
-                Productos farmacéuticos, atención personalizada y servicios de salud al alcance de tu mano.
-              </p>
-              <a href="#productos" class="btn btn-primary btn-lg me-2">Ver productos</a>
-              <a href="#contacto" class="btn btn-outline-primary btn-lg">Contáctanos</a>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Soluciones Integrales en Infraestructura</h2>
+                <p class="text-muted fs-5">Llevamos la tecnología de tu empresa al siguiente nivel.</p>
             </div>
-            <div class="col-lg-6 text-center">
-              <img
-                src="https://img.magnific.com/foto-gratis/farmaceutica-joven-hispana-sonriendo-segura-pie-gesto-brazos-cruzados-farmacia_839833-7087.jpg?semt=ais_hybrid&w=740&q=80"
-                alt="Farmacia"
-                class="img-fluid rounded shadow"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="servicios" class="py-5">
-        <div class="container">
-          <div class="text-center mb-4">
-            <h2>Nuestros servicios</h2>
-            <p class="text-muted">Cuidamos tu salud con apoyo profesional y productos confiables.</p>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card h-100 border-primary">
-                <div class="card-body">
-                  <h5 class="card-title">Atención farmacéutica</h5>
-                  <p class="card-text">Asesoría en medicamentos, posología y recomendaciones para el uso seguro.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-primary">
-                <div class="card-body">
-                  <h5 class="card-title">Entrega a domicilio</h5>
-                  <p class="card-text">Recibe tus productos en la puerta de tu casa con rapidez y comodidad.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100 border-primary">
-                <div class="card-body">
-                  <h5 class="card-title">Control de salud</h5>
-                  <p class="card-text">Monitoreo de presión arterial, glucosa y consejos para un estilo de vida saludable.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="productos" class="bg-light py-5">
-        <div class="container">
-          <div class="text-center mb-4">
-            <h2>Productos destacados</h2>
-            <p class="text-muted">Encuentra medicamentos, vitaminas y artículos de cuidado personal.</p>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Medicamentos</h5>
-                  <p class="card-text">Amplio stock de medicamentos de uso común y especialidades bajo receta.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Vitaminas y suplementos</h5>
-                  <p class="card-text">Suplementos de calidad para fortalecer tu sistema inmune y bienestar diario.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Cuidado personal</h5>
-                  <p class="card-text">Artículos para el cuidado de la piel, higiene y bienestar familiar.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="py-5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h2>Visítanos o escríbenos</h2>
-              <p class="text-muted">Estamos para ayudarte con tus necesidades de salud.</p>
-              <ul class="list-unstyled">
-                <li><strong>Dirección:</strong> Calle Principal 123, Ciudad</li>
-                <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
-                <li><strong>Horario:</strong> Lunes a Viernes 8:00 - 20:00</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <div class="card border-primary">
-                <div class="card-body">
-                  <h5 class="card-title">Formulario de contacto</h5>
-                  <form>
-                    <div class="mb-3">
-                      <label for="nombre" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" />
+            <div class="row g-4">
+                <!-- Servicio 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-cloud-arrow-up-fill"></i></div>
+                            <h5 class="card-title fw-bold">Migración y Arquitectura Cloud</h5>
+                            <p class="card-text text-muted">Acompañamos tu transición hacia la nube (AWS, Azure, Google Cloud). Entornos híbridos, públicos o privados eficientes.</p>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Correo electrónico</label>
-                      <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="mensaje" class="form-label">Mensaje</label>
-                      <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                  </form>
                 </div>
-              </div>
+                <!-- Servicio 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-shield-lock-fill"></i></div>
+                            <h5 class="card-title fw-bold">Ciberseguridad Perimetral</h5>
+                            <p class="card-text text-muted">Protegemos tus activos digitales. Implementación de Firewalls avanzados, redes VPN seguras y auditorías.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-router-fill"></i></div>
+                            <h5 class="card-title fw-bold">Conectividad y Redes</h5>
+                            <p class="card-text text-muted">Diseño e ingeniería de redes corporativas inalámbricas y cableadas con la menor latencia y máxima estabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-database-fill-gear"></i></div>
+                            <h5 class="card-title fw-bold">Gestión de Servidores</h5>
+                            <p class="card-text text-muted">Configuración, mantenimiento y optimización de servidores físicos y virtuales Linux/Windows con backups automatizados.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-headset"></i></div>
+                            <h5 class="card-title fw-bold">Soporte Corporativo 24/7</h5>
+                            <p class="card-text text-muted">Mesa de ayuda y monitoreo proactivo en tiempo real para resolver cualquier incidencia antes de que afecte tu negocio.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 p-4 service-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="icon-box"><i class="bi bi-layer-forward"></i></div>
+                            <h5 class="card-title fw-bold">Virtualización y Data Center</h5>
+                            <p class="card-text text-muted">Maximizamos el rendimiento de tu hardware mediante VMware o Hyper-V, reduciendo costos operativos y de energía.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="bg-primary text-white py-4">
-      <div class="container text-center">
-        <p class="mb-0">© 2026 Farmacia Salud y Vida. Todos los derechos reservados.</p>
-      </div>
+    <!-- Beneficios Section -->
+    <section id="beneficios" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="fw-bold mb-4 text-atlantic">¿Por qué elegir a AtlanticTech?</h2>
+                    <div class="d-flex mb-3">
+                        <i class="bi bi-check-circle-fill text-info fs-4 me-3"></i>
+                        <div>
+                            <h5 class="fw-bold">Garantía de Continuidad</h5>
+                            <p class="text-muted">Diseñamos arquitecturas con tolerancia a fallos para asegurar que tu operación nunca se detenga.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <i class="bi bi-check-circle-fill text-info fs-4 me-3"></i>
+                        <div>
+                            <h5 class="fw-bold">Especialistas Certificados</h5>
+                            <p class="text-muted">Nuestro equipo técnico cuenta con el respaldo y certificaciones de marcas líderes mundiales.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-check-circle-fill text-info fs-4 me-3"></i>
+                        <div>
+                            <h5 class="fw-bold">Enfoque Personalizado</h5>
+                            <p class="text-muted">Adaptamos la tecnología a los objetivos financieros y estratégicos de tu empresa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-5 rounded-3 shadow text-white" style="background-color: #0A3663;">
+                        <h3 class="fw-bold mb-3">¿Tu infraestructura actual está lista para escalar?</h3>
+                        <p class="text-light-50 mb-4">Evita caídas de sistema accidentales y vulnerabilidades de seguridad. Permite que nuestros expertos evalúen tu entorno.</p>
+                        <a href="#contacto" class="btn btn-info w-100 fw-bold py-2">Solicitar Diagnóstico Sin Costo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-atlantic">Hablemos de tu Proyecto</h2>
+                        <p class="text-muted">Completa el formulario y un ingeniero de <strong>AtlanticTech</strong> se pondrá en contacto contigo.</p>
+                    </div>
+                    <div class="card border-0 shadow p-4">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">Nombre Completo</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ej. Carlos Mendoza" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Correo Electrónico Corporativo</label>
+                                <input type="email" class="form-control" id="email" placeholder="carlos@empresa.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-semibold">Teléfono de Contacto</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+54 11 1234-5678">
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label fw-semibold">¿Qué solución requieres?</label>
+                                <select class="form-select" id="service">
+                                    <option selected disabled>Selecciona una opción...</option>
+                                    <option>Migración Cloud (Nube)</option>
+                                    <option>Ciberseguridad Corporativa</option>
+                                    <option>Redes y Conectividad</option>
+                                    <option>Soporte Técnico y Monitoreo 24/7</option>
+                                    <option>Optimización de Servidores</option>
+                                    <option>Otro servicio / Consulta general</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">Mensaje o Requerimiento Especial</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Cuéntanos brevemente las necesidades de tu empresa..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-atlantic w-100 btn-lg fw-bold shadow-sm">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 <strong>AtlanticTech</strong>. Todos los derechos reservados.</p>
+            <small class="text-muted">Soluciones Avanzadas en Infraestructura Tecnológica.</small>
+        </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-BTV4nyPpAbNrcPTX2KU3+1qG3QmbzZmT6d7ZEhjl5ZFK8mJqvB1uYgTj8x7sOm1A"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

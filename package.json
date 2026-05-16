@@ -1,0 +1,23 @@
+{
+  "name": "atlantictech",
+  "version": "1.0.0",
+  "description": "Prueba de Git",
+  "homepage": "https://github.com/radical85/Atlantic-Tech#readme",
+  "bugs": {
+    "url": "https://github.com/radical85/Atlantic-Tech/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radical85/Atlantic-Tech.git"
+  },
+  "license": "ISC",
+  "author": "Nicolas Bagnasco",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
